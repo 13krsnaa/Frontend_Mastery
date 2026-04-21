@@ -1,8 +1,10 @@
 
-function productCard() {
+
+
+function ProductCard()   {  // isme function capital letter se declare hota hai 
   return (
     
-        <div style={{ border: "1px solid gray", padding: "16px", borderRadius: "8px" }}>
+        <div >
             <h3>Laptop & keyboard</h3>
             <p>price : 29,000</p>
             <button> Buy now !</button>
@@ -10,4 +12,4 @@ function productCard() {
     )
 }
 
-export default productCard;
+export default ProductCard;
