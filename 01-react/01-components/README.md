@@ -70,8 +70,10 @@ Yeh code apne `App.jsx` mein likho:
 // NameCard — ek simple component jo naam aur role dikhata hai
 function NameCard() {
   return (
-    <div style={{ border: "1px solid gray", padding: "16px", borderRadius: "8px" }}>
-      <h2>Rahul Sharma</h2>
+    <div
+      style={{ border: "1px solid gray", padding: "16px", borderRadius: "8px" }}
+    >
+      <h2>keshav saxena</h2>
       <p>Full Stack Developer</p>
     </div>
   );
@@ -82,8 +84,8 @@ function App() {
   return (
     <div>
       <h1>Meri App</h1>
-      <NameCard />   {/* component use kiya */}
-      <NameCard />   {/* dobara use kiya — yahi toh reusability hai! */}
+      <NameCard /> {/* component use kiya */}
+      <NameCard /> {/* dobara use kiya — yahi toh reusability hai! */}
     </div>
   );
 }
@@ -92,6 +94,7 @@ export default App;
 ```
 
 ### 👀 Observe Karo:
+
 - `<NameCard />` do baar likha — do baar dikha. Yahi reusability hai.
 - Component ka naam **capital letter** se shuru hota hai — `NameCard`, `App`, `Header`
 - Normal HTML tags lowercase hote hain — `div`, `h1`, `p`
@@ -124,17 +127,17 @@ Jab app badi hoti hai, har component ka alag file hota hai:
 function NameCard() {
   return (
     <div>
-      <h2>Rahul Sharma</h2>
+      <h2>Keshav Saxena</h2>
     </div>
   );
 }
 
-export default NameCard;  // export karna zaroori hai
+export default NameCard; // export karna zaroori hai
 ```
 
 ```jsx
 // 📁 src/App.jsx
-import NameCard from "./components/NameCard";  // import karo
+import NameCard from "./components/NameCard"; // import karo
 
 function App() {
   return (
@@ -150,9 +153,10 @@ export default App;
 ---
 
 ## ✅ Aage Badho Jab:
-- [ ] Khud ek component bana liya
-- [ ] Component 2-3 baar reuse kar liya
-- [ ] Alag file mein component banake import kar liya
+
+- [✅] Khud ek component bana liya
+- [✅] Component 2-3 baar reuse kar liya
+- [✅] Alag file mein component banake import kar liya
 
 ---
 
