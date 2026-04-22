@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import ProductCard from './component.jsx';
+import StudentCard from  './StudentCard.jsx';
 
  
 
@@ -27,10 +28,12 @@ function App() {
   return (
     <div>
       <h1>Meri App</h1>
-      <NameCard />   {/* component use kiya */}
-      <NameCard />  {/* dobara use kiya — yahi toh reusability hai! */}
+{/*       
+      <NameCard /> 
       <ProductCard />  
-       <ProductCard />   {/* dobara use kiya — yahi toh reusability hai! */}
+       <ProductCard />     */}
+      <StudentCard name="keshav saxena" branch="Computer Science" year="3rd Year" cgpa="8.5" isPlaced={false} />
+      <StudentCard name="krishna" branch="CSE" year="3rd Year, 6th Sem" cgpa="8.5" isPlaced={} />
     </div>
   );
 }
