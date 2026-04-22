@@ -8,7 +8,7 @@
 Props kya hain?     → Parent se child ko data bhejne ka tarika
 Kaise bhejte hain?  → <Component name="Rahul" age={21} />
 Kaise lete hain?    → function Component({ name, age }) { ... }
-Kya props change    
+Kya props change
 ho sakti hain?      → NAHI — props read-only hoti hain
 ```
 
@@ -21,7 +21,7 @@ Bina props ke har component ki apni hardcoded values hogi:
 ```jsx
 // ❌ Yeh baar baar likhna padega
 function Card() {
-  return <div>Rahul — 21 saal</div>;
+  return <div>Keshav— 19 saal</div>;
 }
 
 // ✅ Props se ek hi component, alag alag data
@@ -29,7 +29,7 @@ function Card({ name, age }) {
   return <div>{name} — {age} saal</div>;
 }
 
-<Card name="Rahul" age={21} />
+<Card name="Keshav" age={21} />
 <Card name="Priya" age={20} />
 ```
 
@@ -56,7 +56,9 @@ function Card({ name, age, city }) {
   return (
     <div>
       <h2>{name}</h2>
-      <p>{age} saal, {city}</p>
+      <p>
+        {age} saal, {city}
+      </p>
     </div>
   );
 }
@@ -95,7 +97,13 @@ function StudentCard({ name, branch, year, cgpa, isPlaced }) {
 function App() {
   return (
     <div>
-      <StudentCard name="Rahul" branch="CSE" year={3} cgpa={8.5} isPlaced={false} />
+      <StudentCard
+        name="Rahul"
+        branch="CSE"
+        year={3}
+        cgpa={8.5}
+        isPlaced={false}
+      />
       {/* Do aur students add karo */}
     </div>
   );
@@ -103,6 +111,7 @@ function App() {
 ```
 
 **Observe karo:**
+
 - Number props mein `{}` kyun lagate hain?
 - `isPlaced` bina value ke likhoge toh kya hoga?
 
@@ -111,9 +120,11 @@ function App() {
 ## ❓ Interview Questions
 
 **Q: Props aur State mein kya fark hai?**
+
 > Props bahar se aate hain (parent se), State component ka apna data hoti hai. Props read-only hain, State change ho sakti hai.
 
 **Q: Kya child component props change kar sakta hai?**
+
 > Nahi. Agar data change karna ho toh parent mein state rakhte hain aur function prop ke through update karte hain.
 
 ---
