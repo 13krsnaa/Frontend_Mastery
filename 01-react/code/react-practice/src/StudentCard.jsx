@@ -6,7 +6,7 @@ function StudentCard({ name , branch , year , cgpa , isPlaced}){
             <p>Branch : {branch}</p>
             <p>Year : {year}</p>
             <p>cgpa : {cgpa}</p>
-            <h6>Is Placed : {isPlaced ? "Placed ✅" : "Looking 🔍"}</h6>
+            <h6>Is Placed : {isPlaced ? "Placed ✅" : "Got placed into Goldman Sachs"}</h6>
 
 
 
