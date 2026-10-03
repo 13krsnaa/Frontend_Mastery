@@ -7,6 +7,7 @@
 ## 📦 Yeh Folder Kya Hai?
 
 Har topic ka apna folder hai. Har folder mein:
+
 - `README.md` → concept explain + code examples
 - Chhote experiments jo tu khud run kar sake
 
@@ -56,18 +57,18 @@ npm run dev
 
 ## 📊 Progress Track Karo
 
-| Topic | Status |
-|-------|--------|
-| 01 - Components | ⬜ |
-| 02 - Props | ⬜ |
-| 03 - State (useState) | ⬜ |
-| 04 - useEffect | ⬜ |
-| 05 - Event Handling | ⬜ |
-| 06 - Conditional Rendering | ⬜ |
-| 07 - Lists & Keys | ⬜ |
-| 08 - React Router | ⬜ |
-| 09 - API Calls | ⬜ |
-| 10 - Advanced Hooks | ⬜ |
+| Topic                      | Status |
+| -------------------------- | ------ |
+| 01 - Components            | ✅     |
+| 02 - Props                 | ✅     |
+| 03 - State (useState)      | ✅     |
+| 04 - useEffect             | ✅     |
+| 05 - Event Handling        | ✅     |
+| 06 - Conditional Rendering | ✅     |
+| 07 - Lists & Keys          | ✅     |
+| 08 - React Router          | 🔄     |
+| 09 - API Calls             | ⬜     |
+| 10 - Advanced Hooks        | ⬜     |
 
 ⬜ = Nahi kiya &nbsp;&nbsp; 🔄 = Kar raha hun &nbsp;&nbsp; ✅ = Ho gaya
 
