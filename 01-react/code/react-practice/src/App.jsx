@@ -32,8 +32,8 @@ function App() {
       <NameCard /> 
       <ProductCard />  
        <ProductCard />     */}
-      <StudentCard name="keshav saxena" branch="Computer Science" year="3rd Year" cgpa="8.5" isPlaced={false} />
-      <StudentCard name="krishna" branch="CSE" year="3rd Year, 6th Sem" cgpa="8.5" isPlaced={true} />
+      <StudentCard name="keshav saxena" branch="Computer Science" year="3rd Year" cgpa={8.5} isPlaced={false} />
+      <StudentCard name="krishna" branch="CSE" year="3rd Year, 6th Sem" cgpa={8.5} isPlaced={true} />
     </div>
   );
 }
