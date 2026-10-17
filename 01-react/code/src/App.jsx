@@ -7,6 +7,8 @@ import ProductCard from './component.jsx';
 import StudentCard from  './StudentCard.jsx';
 import {Button} from './StudentCard.jsx';
 
+import ButtonOnClick from './button.jsx' ;
+
 
  
 
@@ -30,14 +32,12 @@ function App() {
   return (
     <div>
       <h1>Meri App</h1>
+      <ButtonOnClick />
 {/*       
       <NameCard /> 
       <ProductCard />  
        <ProductCard />     */}
-      <StudentCard name="keshav saxena" branch="Computer Science" year="3rd Year" cgpa={8.5} isPlaced={false} />
-      <StudentCard name="krishna" branch="CSE" year="3rd Year, 6th Sem" cgpa={8.5} isPlaced={true} />
-      <StudentCard name="Jhon" branch="CSE" year="3rd Year, 6th Sem" cgpa={8.5} isPlaced={false} />
-    </div>
+      </div>
   );
 }
 
