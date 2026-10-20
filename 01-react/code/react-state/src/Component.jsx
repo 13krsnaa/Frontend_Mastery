@@ -9,7 +9,7 @@ export default function Component() {
     }
      return (
         <div>
-              <h3> Count = {count}</h3>
+              <h2> Count = {count}</h2>
               <button onClick= {incCount}> Increase the count </button>
         </div>
       
