@@ -3,13 +3,21 @@ import { useState } from "react"; // imported it so we can use useState function
 export default function LudoBoard() {
   let [moves, setMoves] = useState({ blue: 0, yellow: 0, green: 0, red: 0 }); //used multiple objs in key value pair formate
 
+  let [arr, SetArr] = useState(["No moves"]);
   //this is the function which will re-render the moves count
 
   let updateBlue = () => {
-    console.log(`moves.blue = ${moves.blue}`);
-    setMoves((prevMoves) => {
-      return { ...prevMoves, blue: prevMoves.blue + 1 };
+    // console.log(`moves.blue = ${moves.blue}`);
+    // setMoves((prevMoves) => {
+    //   return { ...prevMoves, blue: prevMoves.blue + 1 };
+    // });
+
+    // yha hamne arr ko state me use kia and tre-rendering ke time apne array ko modify kia
+
+    SetArr((prevArr) => {
+      return [...prevArr, "Blue Moves"];
     });
+    console.log(arr);
   };
 
   let updateYellow = () => {
@@ -36,6 +44,8 @@ export default function LudoBoard() {
   return (
     <div>
       <h3>Ludo Board Game </h3>
+
+      <p> {arr}</p>
 
       <div className="board">
         <p>blue moves ={moves.blue} </p>
